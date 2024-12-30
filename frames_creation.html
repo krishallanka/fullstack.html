@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frames Example</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .frame {
+            flex: 1;
+            border: 1px solid black;
+            padding: 10px;
+            overflow: auto;
+        }
+        .frame img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- First Frame (Image) -->
+    <div class="frame">
+        <iframe src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Supra/9574/1673950511987/front-left-side-47.jpg" width="100%" height="100%"></iframe>
+    </div>
+    <!-- Second Frame (Paragraph) -->
+    <div class="frame">
+        <iframe srcdoc="<html><body><p>This is a simple paragraph displayed in the second frame.</p></body></html>" width="100%" height="100%"></iframe>
+    </div>
+    <!-- Third Frame (Hyperlink) -->
+    <div class="frame">
+        <iframe srcdoc="<html><body><a href='https://www.amazon.in' target='_blank'>Click here to visit Amazon</a></body></html>" width="100%" height="100%"></iframe>
+    </div>
+</div>
+</body>
+</html>
